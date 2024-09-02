@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "generate": "prisma generate",
+    "dev": "nodemon  --watch './src/*' -e js,ts,json --exec 'node --inspect=0.0.0.0:9229 --require ts-node/register src/server.ts'"
+  },
+  "dependencies": {
+    "@pothos/core": "^4.2.0",
+    "@pothos/plugin-prisma": "^4.2.1",
+    "@pothos/plugin-smart-subscriptions": "^4.1.0",
+    "@prisma/client": "^5.19.0",
+    "graphql": "^16.9.0",
+    "graphql-subscriptions": "^2.0.0",
+    "graphql-ws": "^5.16.0",
+    "graphql-yoga": "^5.7.0",
+    "ws": "^8.18.0"
+  },
+  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447",
+  "devDependencies": {
+    "@types/node": "^22.5.2",
+    "@types/ws": "^8.5.12",
+    "nodemon": "^3.1.4",
+    "prisma": "^5.19.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
